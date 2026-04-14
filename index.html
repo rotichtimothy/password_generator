@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Secure Password Generator</h1>
+            <p>Generate strong, random passwords with customizable options</p>
+        </header>
+        
+        <main>
+            <div class="password-display">
+                <input type="text" id="password-output" readonly placeholder="Your generated password will appear here">
+                <button id="copy-btn" class="btn btn-primary">Copy</button>
+                <button id="generate-btn" class="btn btn-secondary">Generate</button>
+            </div>
+            
+            <div class="settings">
+                <h2>Settings</h2>
+                
+                <div class="form-group">
+                    <label for="length">Password Length: <span id="length-value">12</span></label>
+                    <input type="range" id="length" min="4" max="64" value="12">
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="include-uppercase" checked>
+                        Include Uppercase Letters (A-Z)
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="include-lowercase" checked>
+                        Include Lowercase Letters (a-z)
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="include-numbers" checked>
+                        Include Numbers (0-9)
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="include-symbols" checked>
+                        Include Symbols (!@#$%^&*)
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="exclude-ambiguous">
+                        Exclude Ambiguous Characters (0, O, l, 1, i)
+                    </label>
+                </div>
+            </div>
+        
+        <footer>
+            <p>Generated passwords are never stored or transmitted anywhere.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
