@@ -1,7 +1,5 @@
 # Secure Password Generator
 
-![Password Generator Screenshot](https://via.placeholder.com/500x300?text=Password+Generator+Interface)
-
 A beautiful, feature-rich web-based password generator with customizable options and real-time strength evaluation.
 
 ## Features
